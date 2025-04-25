@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """Module that defines and annotates variables with specific values."""
 

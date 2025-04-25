@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """Module for converting a float to its string representation."""
 

@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """Module for summing a mixed list of integers and floats."""
 from typing import List, Union
