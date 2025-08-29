@@ -5,5 +5,3 @@ const students = getListStudents();
 const value = getStudentIdsSum(students);
 
 console.log(value);
-
-bob@dylan:~$
