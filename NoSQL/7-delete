@@ -1,0 +1,2 @@
+//just comment
+db.school.delete({ name: "Holberton school" })
