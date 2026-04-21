@@ -1,3 +1,2 @@
-// my comment
-
-show dbs
+// 0-list_databases
+db.adminCommand({ listDatabases: 1 });
