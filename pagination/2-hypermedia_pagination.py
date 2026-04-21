@@ -36,11 +36,8 @@ class Server:
         return dataset[start:end]
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
-        assert isinstance(page, int) and page > 0
-        assert isinstance(page_size, int) and page_size > 0
-
-        dataset = self.dataset()
         data = self.get_page(page, page_size)
+        dataset = self.dataset()
 
         total_pages = math.ceil(len(dataset) / page_size)
 
@@ -48,7 +45,7 @@ class Server:
         prev_page = page - 1 if page > 1 else None
 
         return {
-            "page_size": len(data),
+            "page_size": page_size,
             "page": page,
             "data": data,
             "next_page": next_page,
