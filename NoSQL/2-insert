@@ -1,2 +1,2 @@
-// just comment
-db;insertOne({ name: "Holberton School" })
+// 2-insert
+db.school.insertOne({ name: "Holberton school" });
