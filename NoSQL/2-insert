@@ -1,2 +1,2 @@
-// 2-inesrt
-db;insertOne({ name: "Holberton School" });
+// just comment
+db;insertOne({ name: "Holberton School" })
