@@ -28,3 +28,4 @@ def index_range(page: int, page_size: int) -> tuple:
 if __name__ == "__main__":
     print(index_range(1, 7))     # (0, 7)
     print(index_range(3, 15))    # (30, 45)
+    print(index_range(2, 25))    # (25, 50)
