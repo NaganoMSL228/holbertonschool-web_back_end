@@ -1,4 +1,3 @@
-bob@dylan:~$ cat 0-main.py
 #!/usr/bin/env python3
 """
 Module qui contient la fonction index_range
@@ -17,8 +16,15 @@ def index_range(page: int, page_size: int) -> tuple:
         tuple: (start_index, end_index)
     """
 
-    start_index = (page - 1) * page_size
+    if page < 1 or page_size < 1:
+        return (0, 0)
 
+    start_index = (page - 1) * page_size
     end_index = page * page_size
 
     return (start_index, end_index)
+
+
+if __name__ == "__main__":
+    print(index_range(1, 7))     # (0, 7)
+    print(index_range(3, 15))    # (30, 45)
